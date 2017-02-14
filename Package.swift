@@ -24,14 +24,17 @@ let package = Package(
             dependencies: ["Basic", "Utility"]),
         Target(
             /** Source control operations */
+            name: "Apple",
+            dependencies: ["Basic", "Utility"]),
+        Target(
+            /** Source control operations */
             name: "Keymaster",
-            dependencies: ["SourceControl"]),
+            dependencies: ["Basic", "SourceControl", "Apple"]),
     ],
     dependencies: [
     	.Package(url: "https://github.com/oarrabi/Guaka.git", majorVersion: 0),
     	.Package(url: "https://github.com/onevcat/Rainbow", majorVersion: 2),
     	.Package(url: "https://github.com/oarrabi/Process.git", majorVersion: 0),
     	.Package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", majorVersion: 0),
-    	.Package(url: "https://github.com/oarrabi/FileUtils.git", majorVersion: 0),
     ]
 )
