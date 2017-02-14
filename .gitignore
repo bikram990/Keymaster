@@ -8,3 +8,9 @@
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
+
+## Xcode
+*.xcodeproj
+
+## macOS
+.DS_Store
